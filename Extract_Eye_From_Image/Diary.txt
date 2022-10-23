@@ -4,11 +4,12 @@ pip install imutils numpy argparse dlib cv2
 emcountered error : ERROR: Could not find a version that satisfies the requirement cv2 (from versions: none)
 ERROR: No matching distribution found for cv2
 
-pip install opencv-python
+pip install opencv-contrib-python
 
-pip install opencv-python imutils numpy argparse dlib
+pip3 install opencv-python imutils numpy argparse dlib
 sudo apt-get-update
 sudo apt-get install ffmpeg libsm6 libxext6 -y
+sudo apt-get install qt5-wayland -y
 
 2. Opened for reference : https://stackoverflow.com/questions/57050440/extract-the-eye-part-from-a-persons-image-get-the-height-between-upper-point
 Working on the Eye Extraction from image question.
@@ -19,4 +20,6 @@ Put a Sample Image.
 
 Testing the same on local.
 
+cd ./Extract_Eye_From_Image
+python3 Inspiration.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/1.jpg
 
